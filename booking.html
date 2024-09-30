@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Your Vacation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Vacation Planner</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="booking.html">Booking</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="booking-section">
+      <h1>Book Your Dream Vacation</h1>
+      <form
+        id="bookingForm"
+        class="form"
+        onsubmit="return validateBookingForm()"
+      >
+        <div class="form-group">
+          <label for="fullName">Full Name:</label>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            required
+            placeholder="Enter your full name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Enter your email"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            placeholder="Enter your phone number"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="destination">Destination:</label>
+          <input
+            type="text"
+            id="destination"
+            name="destination"
+            required
+            placeholder="Enter destination"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="startDate">Start Date:</label>
+          <input type="date" id="startDate" name="startDate" required />
+        </div>
+
+        <div class="form-group">
+          <label for="endDate">End Date:</label>
+          <input type="date" id="endDate" name="endDate" required />
+        </div>
+
+        <div class="form-group">
+          <label for="travelers">Number of Travelers:</label>
+          <input
+            type="number"
+            id="travelers"
+            name="travelers"
+            min="1"
+            max="20"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="roomType">Room Type:</label>
+          <select id="roomType" name="roomType" required>
+            <option value="">Select a room type</option>
+            <option value="single">Single</option>
+            <option value="double">Double</option>
+            <option value="suite">Suite</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="specialRequests">Special Requests:</label>
+          <textarea
+            id="specialRequests"
+            name="specialRequests"
+            rows="4"
+            placeholder="Enter any special requests (optional)"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" value="Submit Booking" />
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Vacation Planner</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
