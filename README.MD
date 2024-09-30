@@ -9,7 +9,6 @@ The Vacation Planner is a user-friendly web application designed to help users d
 - **Homepage**: A visually appealing landing page that highlights vacation offerings and includes a call-to-action button for bookings.
 - **Navigation**: Clear navigation bar allowing users to access different sections of the website, including Home, About Us, Contact Us, and Booking.
 - **Responsive Design**: The site is fully responsive, ensuring optimal viewing experiences across various devices, from desktops to smartphones.
-- **Search Functionality**: Users can search for vacation packages tailored to their preferences.
 - **Table of Milestones**: Displays important milestones related to vacation planning.
 
 ## Technical Specifications
